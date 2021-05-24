@@ -21,8 +21,11 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
-    path('', views.home_page_view, name='Home'),
-    path('Home', views.home_page_view, name='Home'),
-    path('Template2', views.page_one_view, name='Template2'),
-    path('Template3', views.page_two_view, name='Template3')
+    path('', views.home, name='Home'),
+    path('Home', views.home, name='Home'),
+    path('Recordes', views.recordes, name='recordes'),
+    path('Equipas', views.equipas, name='equipas'),
+    path('Época', views.epoca, name='epoca'),
+    path('Opinião', views.opiniao, name='opiniao'),
+    path('About', views.about, name='about'),
 ]

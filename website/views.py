@@ -2,14 +2,21 @@
 import datetime
 from django.shortcuts import render
 
-def home_page_view(request):
+def home(request):
 	context = {'time' : datetime.datetime.now()}
 	return render(request, 'website/Home.html', context)
 
-def page_one_view(request):
-    return render(request, 'website/Template 2.html')
+def epoca(request):
+    return render(request, 'website/epoca.html')
 
+def recordes(request):
+    return render(request, 'website/recordes.html')
 
-def page_two_view(request):
-    return render(request, 'website/Template 3.html')
+def equipas(request):
+    return render(request, 'website/equipas.html')
 
+def opiniao(request):
+    return render(request, 'website/opiniao.html')
+
+def about(request):
+    return render(request, 'website/about.html')
