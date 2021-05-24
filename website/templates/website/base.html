@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+</head>
+<body>
+ <header class="jumbotron text-center">
+        <h1>Laboratório 6: primeira web app django ⛅</h1>
+        <p>laboratório 6</p>
+        <nav>
+            <a class="btn btn-info" href="{% url 'website:Home' %}">Home</a>
+            <a class="btn btn-info" href="{% url 'website:Template2' %}">Template2</a>
+            <a class="btn btn-info" href="{% url 'website:Template3' %}">Template3</a>
+        </nav>
+ </header>
+
+    <article class="container">
+        <main class="col-sm-6">
+            {% block main %}
+            {% endblock main %}
+        </main>
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/imgLab6.png' %}">
+        </aside>
+    </article>
+
+    <footer>
+        Laboratório 6 - PW
+    </footer>
+</body>
+</html>
