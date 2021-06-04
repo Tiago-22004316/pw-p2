@@ -1,0 +1,27 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+     <form  method="POST" action="malito:a22004316@alunos.ulht.pt" autocomplete="off">
+                <fieldset>
+                    <legend><b>Identificação</b></legend>
+                    <p>Nome: <input type="text" name="nome" required></p>
+                    <p>
+                        <label for="dataNome">Data de nascimento: </label>
+                        <input type="date" id="dataNome" name="dataNome" min="1950-01-01" max="2021-04-14">
+                    </p>
+                    <p>Email: <input type="email" id="email" name="email" required></p>
+                    <p>Número Telemóvel: <input type="tel" id="phone" name="phone" placeholder="Ex: 925379051" size="9" required></p>
+                    <p>Género:
+                        <br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                    <input type="reset" value="Limpar Dados">
+                </fieldset>
+     </form>
+{% endblock %}

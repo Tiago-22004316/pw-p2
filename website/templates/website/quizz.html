@@ -1,0 +1,110 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+<form method="POST" action="malito:a22004316@alunos.ulht.pt" autocomplete="off">
+    <fieldset>
+        <legend><b>Quizz sobre o Website</b></legend>
+        <!-- 1 -->
+        <p>
+            <b>De que cor é o logótipo óficial da Formula 1?</b>
+            <br>
+            <input type="color" id="f1color" name="f1color" value="#ff0000">
+        </p>
+        <!-- 2 -->
+        <p>
+            <b>Em que ano foi criada oficialmente a Fórmula 1?</b>
+            <br>
+            <input type="date" id="f1data" name="f1data" min="1900-01-01">
+        </p>
+        <!-- 3 -->
+        <p>
+            <b>Qual é a data do último GP no calendário da Formula 1?</b>
+            <br>
+            <input type="date" id="f1cdata" name="f1cdata" min="2021-01-01">
+        </p>
+        <!-- 4 -->
+        <p>
+            <b>Quantas equipas existem na época 2021 da Fórmula 1?</b>
+            <br>
+            <input type="radio" id="teams1" name="num" value="7">
+            <label for="teams1">7</label>
+            <br>
+            <input type="radio" id="teams2" name="num" value="6">
+            <label for="teams2">6</label>
+            <br>
+            <input type="radio" id="teams3" name="num" value="9">
+            <label for="teams3">9</label>
+            <br>
+            <input type="radio" id="teams4" name="num" value="8">
+            <label for="teams4">8</label>
+            <br>
+            <input type="radio" id="teams5" name="num" value="10">
+            <label for="teams5">10</label>
+        </p>
+        <!-- 5 -->
+        <p>
+            <b>Qual foi o piloto que ganhou o Grande Prémio de Portugal 2021?</b>
+            <br>
+            <input type="radio" id="pilotgp11" name="pilot1" value="human">
+            <label for="pilotgp11"> Lewis Hamilton</label>
+            <br>
+            <input type="radio" id="pilotgp21" name="pilot2" value="human">
+            <label for="pilotgp21"> Valtteri Bottas</label>
+            <br>
+            <input type="radio" id="pilotgp31" name="pilot3" value="human">
+            <label for="pilotgp31"> Max Verstappen</label>
+            <br>
+        </p>
+        <!-- 6 -->
+        <p>
+            <b>Qual foi o piloto que ganhou o Grande Prémio de Mónaco 2021?</b>
+            <br>
+            <input type="checkbox" id="pilotgp12" name="pilot1" value="human">
+            <label for="pilotgp12"> Lando Norris</label>
+            <br>
+            <input type="checkbox" id="pilotgp22" name="pilot2" value="human">
+            <label for="pilotgp22"> Max Verstappen</label>
+            <br>
+            <input type="checkbox" id="pilotgp32" name="pilot3" value="human">
+            <label for="pilotgp32"> Carlos Sainz</label>
+            <br>
+        </p>
+        <!-- 7 -->
+        <p>
+            <b>Quem se encontra em primeiro lugar na classificação de pilotos?</b>
+            <br>
+            <label for="fname">Primeiro nome:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="lname">Último nome:</label>
+            <input type="text" id="lname" name="lname">
+            <br>
+        </p>
+        <!-- 8 -->
+        <p>
+            <b>Quem se encontra em primeiro lugar na classificação de pilotos?</b>
+            <br>
+            <label for="fname">Nome equipa:</label>
+            <input type="text" id="ename" name="ename">
+            <br>
+        </p>
+        <!-- 9 -->
+        <p>
+            <b>Qual destes pilotos têm mais títulos?</b>
+            <br>
+            <input type="checkbox" id="pilott1" name="pilot1" value="human">
+            <label for="pilott1"> Michael Schumacher</label>
+            <br>
+            <input type="checkbox" id="pilott2" name="pilot2" value="human">
+            <label for="pilott2"> Sebastian Vettel</label>
+            <br>
+            <input type="checkbox" id="pilott3" name="pilot3" value="human">
+            <label for="pilott3"> Alain Prost</label>
+            <br>
+        </p>
+        <!-- 10 -->
+
+    </fieldset>
+</form>
+{% endblock %}

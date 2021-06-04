@@ -20,3 +20,9 @@ def opiniao(request):
 
 def about(request):
     return render(request, 'website/about.html')
+
+def contacto(request):
+    return render(request, 'website/contacto.html')
+
+def quizz(request):
+    return render(request, 'website/quizz.html')
